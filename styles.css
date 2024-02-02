@@ -1,0 +1,127 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    accent-color: #5e9eff;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+@media (prefers-reduced-motion: no-preference){
+    *{
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:815px){
+    #navbar{
+        position: fixed;
+        width: 100% !important;
+        height: 50% !important;
+        overflow: hidden !important;
+        z-index: 1;
+    }
+
+    #navbar ul{
+        height:200px !important;
+        border-bottom: 1px solid white;
+    }
+
+    #main-doc{
+        width:100% !important;
+        height:50% !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 0% !important;
+    }
+}
+
+
+/* navbar stuff */
+#navbar{
+    position: fixed;
+    border-right: 1px solid white;
+    width: 25%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    text-align: center;
+    z-index: 1;
+}
+
+#navbar header{
+    padding: 20px;
+    font-size: 25px;
+}
+
+#navbar ul{
+    width:100%;
+    height:88%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#navbar ul li{
+    border-bottom: 1px solid white;
+    padding: 15px;
+    margin: 0;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+#navbar ul li:first-of-type{
+    border-top: 1px solid white;
+}
+
+#navbar ul li:last-of-type{
+    border-bottom: none !important;
+}
+
+/* main-doc stuff */
+#main-doc{
+    width:75%;
+    height: 100vh;
+    position: absolute;
+    left:25%;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+code{
+    display: block;
+    background-color: hsla(0, 3%, 23%, 0.689);
+    color: rgb(57, 96, 193);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main-section a{
+    display: inline;
+    color: purple;
+}
+
+#main-doc p,h3,h4,ul,code{
+    margin-left: 10px;
+}
+
+img{
+    display: block;
+    width:70%;
+    margin: 0 auto;
+}

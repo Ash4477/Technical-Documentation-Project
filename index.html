@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="html-technical-documentation">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+            <li><a class="nav-link" href="#Getting_Started_with_HTML">Getting Started with HTML</a></li>
+            <li><a class="nav-link" href="#Whats_in_the_head?_Metadata_in_HTML">Whats in the head? Metadata in HTML</a></li>
+            <li><a class="nav-link" href="#HTML_text_fundamentals">HTML text fundamentals</a></li>
+            <li><a class="nav-link" href="#Creating_hyperlinks">Creating hyperlinks</a></li>
+            <li><a class="nav-link" href="#Advanced_text_formatting">Advanced text formatting</a></li>
+            <li><a class="nav-link" href="#Document_and_website_structure">Document and website structure</a></li>
+            <li><a class="nav-link" href="#Debugging_HTML">Debugging HTML</a></li>
+            <li><a class="nav-link" href="#Marking_up_a_letter">Marking up a letter</a></li>
+            <li><a class="nav-link" href="#Structuring_page_of_content">Structuring page of content</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+ 
+    <main id="main-doc">
+        <section id="Introduction_to_HTML" class="main-section">
+            <header><h1>Introduction to HTML</h1></header>
+            <article>
+                <p>At its heart, HTML is a language made up of elements, 
+                    which can be applied to pieces of text to give them 
+                    different meaning in a document (Is it a paragraph? 
+                    Is it a bulleted list? Is it part of a table?), 
+                    structure a document into logical sections 
+                    (Does it have a header? Three columns of content? A navigation menu?), 
+                    and embed content such as images and videos into a page. 
+                    This module will introduce the first two of these and introduce 
+                    fundamental concepts and syntax you need to know to understand HTML.</p>
+            </article>
+        </section>
+        <section id="Getting_Started_with_HTML" class="main-section">
+            <header><h1>Getting Started with HTML</h1></header>
+            <article>
+                <p>In this article, we cover the absolute basics of HTML. To get you started, this article defines elements, attributes, and all the other important terms you may have heard. It also explains where these fit into HTML. You will learn how HTML elements are structured, how a typical HTML page is structured, and other important basic language features. Along the way, there will be an opportunity to play with HTML too!</p>
+                <h3>What is HTML?</h3>
+                <p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+                <code>My cat is very grumpy</code>
+                <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (&lt;p&gt;) element:</p>
+                <code>&lt;p&gt; My cat is very grumpy&lt;/p&gt;</code>
+                <h3>Anatomy of an HTML element</h3>
+                <p>The anatomy of our element is:</p>
+                <ul>
+                    <li><p><b>The opening tag:</b> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</p></li>
+                    <li><p><b>The content:</b> This is the content of the element. In this example, it is the paragraph text.</p></li>
+                    <li><p><b>The closing tag:</b> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</p></li>
+                </ul>
+            </article>
+        </section>
+        <section id="Whats_in_the_head?_Metadata_in_HTML" class="main-section">
+            <header><h1>Whats in the head? Metadata in HTML</h1></header>
+            <article>
+                <code>
+                    &lt;!doctype html&gt;<br>
+                    &lt;html lang="en-US"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="utf-8" /&gt;<br>
+                    &lt;title>My test page&lt;/title&gt; <br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;p>This is my page</p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html>
+                </code>
+                <h3>&lt;head&gt; element</h3>
+                <p>The HTML head is the contents of the &lt;head&gt; element. Unlike the contents of the &lt;body&gt; element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document.</p>
+                <h3>&lt;title&gt; vs &lt;h1&gt;</h3>
+                <p>We've already seen the &lt;title&gt; element in action — this can be used to add a title to the document. This however can get confused with the h1 element, which is used to add a top level heading to your body content — this is also sometimes referred to as the page title. But they are different things!</p>
+                <ul>
+                    <li><p>The h1 element appears on the page when loaded in the browser — generally this should be used once per page, to mark up the title of your page content (the story title, or news headline, or whatever is appropriate to your usage.)</p></li>
+                    <li><p>The &lt;title&gt; element is metadata that represents the title of the overall HTML document (not the document's content.)</p></li>
+                </ul>       
+            </article>
+        </section>
+        <section id="HTML_text_fundamentals" class="main-section">
+            <header><h1>HTML text fundamentals</h1></header>
+            <article>
+                <p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+                <h3>The basics: headings and paragraphs</h3>
+                <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals/newspaper_small.jpg" alt="newspaper-img">
+                <p>Structured content makes the reading experience easier and more enjoyable.</p>
+                <p>In HTML, each paragraph has to be wrapped in a <p> element, like so:</p>
+                <code>&lt;p&gt;I am a paragraph, oh yes I am.&lt;p&gt;</code>
+                <p>Each heading has to be wrapped in a heading element:</p>
+                <code>&lt;h1&gt;I am the title of the story.&lt;/h1&gt;</code>
+                <p>There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; &lt;h1&gt; represents the main heading, &lt;h2&gt; represents subheadings, &lt;h3&gt; represents sub-subheadings, and so on.</p>
+            </article>
+        </section>
+        <section id="Creating_hyperlinks" class="main-section">
+            <header><h1>Creating hyperlinks</h1></header>
+            <article>
+                <p>Hyperlinks are really important — they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.</p>
+                <h3>What is a hyperlink?</h3>
+                <p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).</p>
+                <p>For example, the BBC homepage contains many links that point not only to multiple news stories, but also different areas of the site (navigation functionality), login/registration pages (user tools), and more.</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks/updated-bbc-website.png">
+                <h3>Anatomy of a link</h3>
+                <p>A basic link is created by wrapping the text or other content inside an &lt;a&gt; element and using the href attribute, also known as a Hypertext Reference, or target, that contains the web address.</p>
+                <code>
+                    &lt;p&gt;
+                      I'm creating a link to
+                      &lt;a&gt; href="https://www.mozilla.org/en-US/">the Mozilla homepage&lt;/a&gt;.
+                    &lt;/p&gt;
+                </code>    
+                <p>This gives us the following result:<br>I'm creating a link to the <a href="https://www.mozilla.org/en-US/">Mozilla homepage.</a></p>
+            </article>
+        </section>
+        <section id="Advanced_text_formatting" class="main-section">
+            <header><h1>Advanced text formatting</h1></header>
+            <article>
+                <h3>Description lists</h3>
+                <p>In HTML text fundamentals, we walked through how to mark up basic lists in HTML, but we didn't mention the third type of list you'll occasionally come across — description lists. The purpose of these lists is to mark up a set of items and their associated descriptions, such as terms and definitions, or questions and answers.</p>
+                <h3>Quotations</h3>
+                <p>HTML also has features available for marking up quotations; which element you use depends on whether you are marking up a block or inline quotation.</p>
+                <ul>
+                    <li>
+                        <h4>Blockquotes</h4>
+                        <p>If a section of block level content (be it a paragraph, multiple paragraphs, a list, etc.) is quoted from somewhere else, you should wrap it inside a &lt;blockquote&gt; element to signify this, and include a URL pointing to the source of the quote inside a cite attribute.</p>
+                    </li>
+                    <li>
+                        <h4>Inline quotations</h4>
+                        <p>Inline quotations work in exactly the same way, except that they use the &lt;q&gt; element.</p>
+                    </li>
+                    <li>
+                        <h4>Citations</h4>
+                        <p>The content of the cite attribute sounds useful, but unfortunately browsers, screen readers, etc. don't really do much with it. There is no way to get the browser to display the contents of cite, without writing your own solution using JavaScript or CSS. If you want to make the source of the quotation available on the page you need to make it available in the text via a link or some other appropriate way.</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Document_and_website_structure" class="main-section">
+            <header><h1>Document and website structure</h1></header>
+            <article>
+                <p>In addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column"). This article looks into how to plan a basic website structure, and write the HTML to represent this structure.</p>
+                <p>Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:</p>
+                <h4>header:</h4>
+                <p>Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.</p>
+                <h4>navigation bar:</h4>
+                <p>Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</p>
+                <h4>main content:</h4>
+                <p>A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!</p>
+                <h4>sidebar:</h4>
+                <p>Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.</p>
+                <h4>footer:</h4>
+                <p>A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.</p>
+                <p>A "typical website" could be structured something like this:</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/sample-website.png">
+            </article>
+        </section>
+        <section id="Debugging_HTML" class="main-section">
+            <header><h1>Debugging HTML</h1></header>
+            <article>
+                <p>Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article will introduce you to some tools that can help you find and fix errors in HTML.</p>
+                <p>When writing code of some kind, everything is usually fine, until that dreaded moment when an error occurs — you've done something wrong, so your code doesn't work — either not at all, or not quite how you wanted it to. For example, the following shows an error reported when trying to compile a simple program written in the Rust language.</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML/error-message.png">
+                <p>Here, the error message is relatively easy to understand — "unterminated double quote string". If you look at the listing, you can probably see how println!(Hello, world!"); might logically be missing a double quote. However, error messages can quickly get more complicated and less easy to interpret as programs get bigger, and even simple cases can look a little intimidating to someone who doesn't know anything about Rust.<br>Debugging doesn't have to be scary though — the key to being comfortable with writing and debugging any programming language or code is familiarity with both the language and the tools.</p>
+            </article>
+        </section>
+        <section id="Marking_up_a_letter" class="main-section">
+            <header><h1>Marking up a letter</h1></header>
+            <article>
+                <p>We all learn to write a letter sooner or later; it is also a useful example to test our text formatting skills. In this assignment, you'll have a letter to mark up as a test for your HTML text formatting skills, as well as hyperlinks and proper use of the HTML &lt;head&gt; element.</p>
+                <h3>Project Brief</h3>
+                <p>For this project, your task is to mark up a letter that needs to be hosted on a university intranet. The letter is a response from a research fellow to a prospective PhD student concerning their application to the university.</p>
+                <h4>Block/structural semantics</h4>
+                <ul>
+                    <li>Use appropriate document structure including doctype, and &lt;html&gt;, &lt;head&gt; and &lt;body&gt; elements.</li>
+                    <li>In general, the letter should be marked up as an organization of headings and paragraphs, with the following exception. There is one top level heading (the "Re:" line) and three second level headings.</li>
+                    <li>Use an appropriate list type to mark up the semester start dates, study subjects, and exotic dances.</li>
+                    <li>Put the two addresses inside &lt;address&gt; elements. Each line of the address should sit on a new line, but not be in a new paragraph.</li>
+                </ul>
+                <h4>Inline semantics</h4>
+                <ul>
+                    <li>The names of the sender and receiver (and Tel and Email) should be marked up with strong importance.</li>
+                    <li>The four dates in the document should have appropriate elements containing machine-readable dates.
+                    </li>
+                    <li>The first address and first date in the letter should have a class attribute value of sender-column. The CSS you'll add later will cause these to be right aligned, as it should be in the case in a classic letter layout.</li>
+                </ul>
+                <h4>The head of the document</h4>
+                <ul>
+                    <li>The character set of the document should be set as utf-8 using the appropriate meta tag.</li>
+                    <li>The author of the letter should be specified in an appropriate meta tag.
+                    </li>
+                    <li>The provided CSS should be included inside an appropriate tag.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id="Structuring_page_of_content" class="main-section">
+            <header><h1>Structuring page of content</h1></header>
+            <article>
+                <h3>Project Brief</h3>
+                <p>For this project, your task is to take the content for the homepage of a bird watching website and add structural elements to it so it can have a page layout applied to it. It needs to have:</p>
+                <ul>
+                    <li>A header spanning the full width of the site containing the main title for the page, the site logo, and the navigation menu. The title and logo appear side by side once styling is applied, and the navigation appears below those two items.</li>
+                    <li>A main content area containing two columns — a main block to contain the welcome text, and a sidebar to contain image thumbnails.</li>
+                    <li>A footer containing copyright information and credits.</li>
+                </ul>
+                <p>The following screenshot shows an example of what the homepage might look like after being marked up.</p>
+                <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Structuring_a_page_of_content/example-page.png">
+            </article>
+        </section>
+        <section id="Reference" class="main-section">
+            <header><h1>Reference</h1></header>
+            <ul>
+                <li>All the documentation is taken from <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">MDN</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
